@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#11110f" />
+  <meta name="description" content="Raufi Musaddiq — software engineer building reliable backend systems, developer tooling, and agentic software." />
+  <meta property="og:title" content="Raufi Musaddiq — Software Engineer" />
+  <meta property="og:description" content="Backend systems, developer tooling, and agentic software." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://raufimusaddiq.github.io/" />
+  <title>Raufi Musaddiq — Software Engineer</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header shell">
+    <a class="brand" href="#top" aria-label="Raufi Musaddiq home">
+      <span class="brand-mark" aria-hidden="true">RM</span>
+      <span class="brand-name">Raufi Musaddiq</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="eyebrow"><span>01</span> Software engineer</div>
+      <h1 id="hero-title">I build systems that stay understandable when the product gets complicated.</h1>
+      <div class="hero-bottom">
+        <p class="hero-copy">
+          Backend-first engineer working across distributed systems, developer tooling, and practical AI products — with deterministic boundaries where correctness matters.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Selected work <span aria-hidden="true">↘</span></a>
+          <a class="button" href="https://github.com/raufimusaddiq" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="work shell section" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div class="eyebrow"><span>02</span> Selected work</div>
+        <h2 id="work-title">Projects I care about.</h2>
+      </div>
+
+      <div class="project-list">
+        <article class="project project-featured">
+          <div class="project-meta">
+            <span>Household finance</span>
+            <span>Go · Next.js · PostgreSQL</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <h3>Richmod</h3>
+              <p>
+                A self-hosted household finance system that turns emails, Telegram messages, and documents into an auditable ledger. LLMs interpret evidence; deterministic application code owns financial state.
+              </p>
+            </div>
+            <a class="project-link" href="https://github.com/raufimusaddiq/richmod" target="_blank" rel="noreferrer" aria-label="Open Richmod on GitHub">↗</a>
+          </div>
+          <div class="project-notes" aria-label="Richmod highlights">
+            <span>Evidence-first ingestion</span>
+            <span>Human-in-the-loop review</span>
+            <span>Self-hosted</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-meta">
+            <span>Agent orchestration</span>
+            <span>Java · Spring Boot · Go · React</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <h3>Agenticform</h3>
+              <p>
+                A control plane for orchestrating multiple Codex agents across local and remote execution nodes, with durable tasks, approvals, policy gates, isolated workspaces, and recovery semantics.
+              </p>
+            </div>
+            <a class="project-link" href="https://github.com/raufimusaddiq/agenticform" target="_blank" rel="noreferrer" aria-label="Open Agenticform on GitHub">↗</a>
+          </div>
+          <div class="project-notes" aria-label="Agenticform highlights">
+            <span>Durable orchestration</span>
+            <span>Human approvals</span>
+            <span>Distributed execution</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-meta">
+            <span>Applied AI experiment</span>
+            <span>Java · Python · Next.js · CUDA</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <h3>Viral Clipper</h3>
+              <p>
+                A video-processing pipeline that imports long-form video, transcribes it, ranks candidate moments, renders vertical clips, and learns from post-performance feedback.
+              </p>
+            </div>
+            <a class="project-link" href="https://github.com/raufimusaddiq/viral-clipper" target="_blank" rel="noreferrer" aria-label="Open Viral Clipper on GitHub">↗</a>
+          </div>
+          <div class="project-notes" aria-label="Viral Clipper highlights">
+            <span>Whisper transcription</span>
+            <span>Multimodal scoring</span>
+            <span>GPU pipeline</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about shell section" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <div class="eyebrow"><span>03</span> How I work</div>
+        <h2 id="about-title">Software should explain itself.</h2>
+      </div>
+
+      <div class="about-grid">
+        <p class="about-lead">
+          I like systems with explicit boundaries: clear ownership of state, observable failure modes, and architecture that can survive the next feature without becoming mysterious.
+        </p>
+        <div class="principles">
+          <article>
+            <span class="principle-number">01</span>
+            <h3>Correctness before cleverness</h3>
+            <p>Use AI where interpretation helps. Keep critical state transitions deterministic, testable, and auditable.</p>
+          </article>
+          <article>
+            <span class="principle-number">02</span>
+            <h3>Durability is a feature</h3>
+            <p>Retries, idempotency, recovery, and explicit ownership are product behavior, not implementation trivia.</p>
+          </article>
+          <article>
+            <span class="principle-number">03</span>
+            <h3>Operate what you build</h3>
+            <p>Deployment, observability, failure recovery, and security boundaries belong in the design from the start.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stack shell section" aria-labelledby="stack-title">
+      <div class="section-heading compact">
+        <div class="eyebrow"><span>04</span> Working set</div>
+        <h2 id="stack-title">Tools I reach for.</h2>
+      </div>
+      <div class="stack-grid" aria-label="Technology stack">
+        <span>Java</span>
+        <span>Spring</span>
+        <span>Go</span>
+        <span>PostgreSQL</span>
+        <span>Kafka</span>
+        <span>TypeScript</span>
+        <span>React</span>
+        <span>Next.js</span>
+        <span>Docker</span>
+        <span>Cloudflare</span>
+        <span>GitHub Actions</span>
+        <span>Linux</span>
+      </div>
+    </section>
+
+    <section class="contact shell section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-card">
+        <div class="eyebrow"><span>05</span> Contact</div>
+        <h2 id="contact-title">Have an interesting system to build?</h2>
+        <p>GitHub is the best place to see what I am working on. Email works for everything else.</p>
+        <div class="contact-links">
+          <a class="button button-primary" href="mailto:raufimusaddiq@gmail.com">raufimusaddiq@gmail.com <span aria-hidden="true">↗</span></a>
+          <a class="button" href="https://github.com/raufimusaddiq" target="_blank" rel="noreferrer">github.com/raufimusaddiq <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <span>Raufi Musaddiq</span>
+    <span>Built without a framework.</span>
+    <span>© <span id="year">2026</span></span>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

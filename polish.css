@@ -1,0 +1,114 @@
+/* Targeted UI refinements layered on top of the Taste Skill redesign. */
+
+.theme-toggle {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border: 1px solid var(--line);
+  padding: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1;
+  transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease;
+}
+
+.theme-toggle::after {
+  display: none;
+}
+
+.theme-toggle:hover {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.feature-project-copy {
+  padding-left: 52px;
+}
+
+.project-row-end .project-open {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 20px;
+  line-height: 1;
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease, color 160ms ease;
+}
+
+.project-row-end .project-open::after {
+  display: none;
+}
+
+.project-row-end .project-open > span {
+  display: inline;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.project-row-end .project-open:hover {
+  transform: translateY(-2px);
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--bg);
+}
+
+@media (max-width: 980px) {
+  .feature-project-copy {
+    padding: 42px 32px 46px;
+  }
+}
+
+@media (max-width: 720px) {
+  .theme-toggle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .feature-project,
+  .feature-project-spec {
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+
+  .feature-project-copy {
+    padding: 32px 24px 38px;
+  }
+
+  .feature-project-spec > div {
+    padding: 22px 20px;
+  }
+
+  .feature-project-spec > div:nth-child(even) {
+    padding-left: 20px;
+  }
+
+  .project-row-end {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .feature-project,
+  .feature-project-spec {
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+
+  .feature-project-copy {
+    padding-inline: 20px;
+  }
+}

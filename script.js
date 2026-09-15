@@ -23,7 +23,6 @@
 
     const nextTheme = theme === 'dark' ? 'light' : 'dark';
     if (toggle) {
-      toggle.textContent = nextTheme === 'dark' ? 'Dark' : 'Light';
       toggle.setAttribute('aria-label', `Switch to ${nextTheme} theme`);
       toggle.setAttribute('title', `Switch to ${nextTheme} theme`);
     }

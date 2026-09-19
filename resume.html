@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Raufi Musaddiq - Public Resume</title>
+  <style>
+    @page { size: A4; margin: 10mm 14mm 12mm; }
+    :root { --ink:#171714; --muted:#656159; --line:#d8d4ca; --accent:#cf462e; --surface:#f5f3ee; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); font-family:Arial, Helvetica, sans-serif; font-size:9.2pt; line-height:1.23; }
+    a { color:inherit; text-decoration:none; }
+    header { margin-bottom:9px; }
+    h1 { margin:0; font-size:27pt; line-height:1; letter-spacing:-1.2px; }
+    .role { margin:5px 0 8px; color:var(--accent); font-size:12.2pt; font-weight:700; }
+    .contact { color:var(--muted); font-size:8.5pt; }
+    .contact span:not(:last-child)::after { content:" | "; padding:0 5px; color:#99958d; }
+    h2 { margin:10px 0 5px; padding-bottom:3px; border-bottom:1px solid var(--line); color:var(--accent); font-size:10.5pt; text-transform:uppercase; }
+    p { margin:0 0 4px; }
+    .profile { line-height:1.3; }
+    .skills { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid var(--line); border-left:1px solid var(--line); }
+    .skill { min-height:47px; padding:5px 7px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--surface); }
+    .skill strong { display:block; margin-bottom:2px; color:var(--accent); font-size:7.8pt; text-transform:uppercase; }
+    .job { margin-top:7px; }
+    .job h3 { margin:0; font-size:11.2pt; line-height:1.05; }
+    .meta { margin:2px 0 4px; color:var(--muted); font-size:8.4pt; }
+    ul { margin:0; padding-left:15px; }
+    li { margin:0 0 2px; padding-left:1px; }
+    li::marker { color:var(--accent); }
+    .edu p { margin-bottom:2px; }
+    .footer-note { margin-top:9px; padding-top:5px; border-top:1px solid var(--line); color:var(--muted); font-size:7.2pt; text-align:center; }
+    @media screen {
+      body { max-width:210mm; margin:24px auto; padding:10mm 14mm 12mm; box-shadow:0 0 0 1px var(--line); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Raufi Musaddiq</h1>
+    <div class="role">Backend Engineer - Security &amp; User Management</div>
+    <div class="contact">
+      <span><a href="mailto:raufimusaddiq@gmail.com">raufimusaddiq@gmail.com</a></span>
+      <span><a href="https://www.linkedin.com/in/raufi-musaddiq">linkedin.com/in/raufi-musaddiq</a></span>
+      <span><a href="https://github.com/raufimusaddiq">github.com/raufimusaddiq</a></span>
+      <span><a href="https://raufimusaddiq.github.io/">raufimusaddiq.github.io</a></span>
+      <span>Yogyakarta, Indonesia</span>
+    </div>
+  </header>
+
+  <h2>Profile</h2>
+  <p class="profile">Backend engineer with production experience across Security and User Management at DANA, including identity and verification, authentication and account lifecycle, risk controls, and recurring payments. Earlier work spans backend services, IoT platforms, and mobile development. Focused on explicit failure behavior, controlled rollout, operational recovery, and maintainable distributed systems.</p>
+
+  <h2>Working set</h2>
+  <div class="skills">
+    <div class="skill"><strong>Languages &amp; frameworks</strong>Java 8/21, JavaScript, SQL, Spring Boot, Spring MVC, Spring Data, SOFABoot, Node.js, Maven</div>
+    <div class="skill"><strong>Data &amp; messaging</strong>MySQL, OceanBase, MongoDB, distributed caching, sharded tables, Kafka</div>
+    <div class="skill"><strong>Architecture</strong>Microservices, event-driven systems, RPC, message queues, REST APIs</div>
+    <div class="skill"><strong>Security &amp; user management</strong>Biometric/liveness verification, OTP, KBA, passkeys, device signals, JWT, key management</div>
+    <div class="skill"><strong>Platform</strong>CDN edge computing, feature flags, gradual rollout, object storage, Grafana</div>
+    <div class="skill"><strong>Testing</strong>Integration testing, TestNG, Mockito</div>
+  </div>
+
+  <h2>Experience</h2>
+  <section class="job">
+    <h3>Software Development Engineer, Backend</h3>
+    <div class="meta">DANA Indonesia · Jul 2023 - Present &nbsp; | &nbsp; Associate Software Development Engineer, Backend · Mar 2022 - Jun 2023</div>
+    <ul>
+      <li>Work across Security and User Management, covering identity and verification, authentication and account lifecycle, risk controls, and recurring payment systems.</li>
+      <li>Built and operated user verification paths spanning biometric/liveness checks, one-time passwords, knowledge-based authentication, passkeys, and account verification integrations.</li>
+      <li>Designed and rolled out authentication controls for abuse-sensitive account flows, including key management and staged rollout, while integrating risk signals into account decisions.</li>
+      <li>Owned account lifecycle capabilities including dormancy handling, reactivation with risk assessment and verification, and self-service deletion behind step-up verification.</li>
+      <li>Maintained login and registration paths with device/risk gating, and delivered distributed controls to limit abusive one-time-password delivery.</li>
+      <li>Built recurring payment execution across multiple billing intervals with first-payment handling, timeout behavior, and bounded retry strategies.</li>
+    </ul>
+  </section>
+
+  <section class="job">
+    <h3>Software Development Engineer</h3>
+    <div class="meta">Beehive Drones · Nov 2019 - Mar 2022 &nbsp; | &nbsp; Management Trainee · Apr 2019 - Oct 2019</div>
+    <ul>
+      <li>Designed schemas, backend services, and APIs for products spanning drone operations, agriculture IoT, industrial control, and telemetry-driven systems.</li>
+      <li>Built an agriculture IoT platform ingesting field sensor telemetry and a drone delivery management system covering dispatch, tracking, and operational reporting.</li>
+    </ul>
+  </section>
+
+  <section class="job">
+    <h3>Android Developer</h3>
+    <div class="meta">Majapahitech · May 2018 - Feb 2019</div>
+    <ul>
+      <li>Built an Android health application that synchronized wearable fitness telemetry to a cloud backend and presented activity history and health metrics.</li>
+    </ul>
+  </section>
+
+  <h2>Education &amp; awards</h2>
+  <div class="edu">
+    <p><strong>Bachelor of Information Technology</strong> - Universitas Gadjah Mada, 2022</p>
+    <p><strong>1st place - Arkavidia Hackathon / Hackathon 3.0 Firetech / Apps Innovation C-Compiler, 2018</strong></p>
+    <p style="color:var(--muted)">Also 2018: 3rd place, Apps Innovation Joints · Finalist, Transhub Challenge (Ministry of Transportation of Indonesia)</p>
+  </div>
+
+  <h2>Languages</h2>
+  <p><strong>Bahasa Indonesia</strong> (native) &nbsp; · &nbsp; <strong>English</strong> (professional working proficiency)</p>
+
+  <div class="footer-note">Public resume - capability-level summary. Internal architecture, vendors, metrics, thresholds, and proprietary logic omitted.</div>
+</body>
+</html>

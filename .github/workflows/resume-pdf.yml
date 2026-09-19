@@ -28,7 +28,7 @@ jobs:
 
       - name: Commit generated PDF
         run: |
-          if git diff --quiet -- resume.pdf && [ -f resume.pdf ]; then
+          if [ -z "$(git status --porcelain -- resume.pdf)" ]; then
             echo "resume.pdf unchanged"
             exit 0
           fi

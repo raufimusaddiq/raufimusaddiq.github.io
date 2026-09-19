@@ -121,9 +121,7 @@
   padding: 132px 0 126px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  background:
-    linear-gradient(90deg, transparent 0, transparent calc(50% - .5px), color-mix(in srgb, var(--line) 38%, transparent) 50%, transparent calc(50% + .5px)),
-    var(--bg);
+  background: var(--bg);
 }
 
 .experience-shell {
@@ -542,4 +540,12 @@
   .experience-links {
     margin-top: 34px;
   }
+}
+
+
+.experience-heading-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 26px;
 }
